@@ -9,13 +9,10 @@ import { ServeStaticModule } from '@nestjs/serve-static';
 
 @Module({
     imports: [
-        ServeStaticModule.forRoot({rootPath: path.resolve(__dirname, "client")}),
-        MongooseModule.forRoot
-            ('mongodb+srv://admin:admin@cluster0.8p0yivi.mongodb.net/?retryWrites=true&w=majority'),
+        ServeStaticModule.forRoot({rootPath: path.resolve(__dirname, 'static')}),
+        MongooseModule.forRoot('mongodb+srv://admin:admin@cluster0.oeudk.mongodb.net/music-platform?retryWrites=true&w=majority'),
         TrackModule,
         FileModule
-    ],
-    controllers: [AppController],
-    providers: [AppService],
+    ]
 })
 export class AppModule {}
