@@ -4,7 +4,7 @@
 
 ## About projec
 
-Mucis platform, where you can upload and comment a song/
+Music platform, where you can upload and comment a song/
 
 ## Languages and Tools
 
